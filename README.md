@@ -34,11 +34,6 @@ A web-based IT Help Desk Ticketing System that allows users to submit technical 
 ## Screenshots
 Screenshots of the application will be displayed below.
 
-### Homepage
-![Homepage](screenshots/homepage.png)
-
-### Submit Ticket
-![Submit Ticket](screenshots/submit-ticket.png)
-
-### Ticket Dashboard
-![Ticket Dashboard](screenshots/ticket-dashboard.png)
+![Homepage](Screenshots/homepage.png)
+![Submit Ticket](Screenshots/submit-ticket.png)
+![Ticket Dashboard](Screenshots/ticket-dashboard.png)
