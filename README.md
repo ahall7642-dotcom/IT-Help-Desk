@@ -1,4 +1,3 @@
-
 # IT Help Desk Ticketing System
 
 ## Project Overview
@@ -27,14 +26,19 @@ A web-based IT Help Desk Ticketing System that allows users to submit technical 
 - Using Git and GitHub for version control
 
 ## How to Run
-
 1. Clone this repository.
-2. Install Flask:
+2. Install Flask: `pip install flask`
+3. Run the application: `python app.py`
+4. Open `http://127.0.0.1:5000` in your browser.
 
-   pip install flask
+## Screenshots
+Screenshots of the application will be displayed below.
 
-3. Run the application:
+### Homepage
+![Homepage](screenshots/homepage.png)
 
-   python app.py
+### Submit Ticket
+![Submit Ticket](screenshots/submit-ticket.png)
 
-4. Open http://127.0.0.1:5000 in your browser.
+### Ticket Dashboard
+![Ticket Dashboard](screenshots/ticket-dashboard.png)
