@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Help Desk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <h1>IT Help Desk</h1>
+        <div>
+            <a href="/">Home</a>
+            <a href="/submit">Submit Ticket</a>
+            <a href="/tickets">View Tickets</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Welcome to the IT Help Desk</h2>
+
+        <p>
+            Need technical support?
+            Submit a ticket and our IT team will help resolve your issue.
+        </p>
+
+        <a href="/submit" class="button">Submit a Ticket</a>
+        <a href="/tickets" class="button">View Tickets</a>
+    </main>
+
+</body>
+</html>
+

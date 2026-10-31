@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Ticket Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>IT Support Dashboard</h1>
+
+    <h2>Submitted Tickets</h2>
+
+    <table border="1">
+        <tr>
+            <th>Ticket ID</th>
+            <th>Name</th>
+            <th>Issue</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+
+        {% for ticket in tickets %}
+        <tr>
+            <td>{{ ticket.id }}</td>
+            <td>{{ ticket.name }}</td>
+            <td>{{ ticket.issue }}</td>
+            <td>{{ ticket.description }}</td>
+
+            <td>
+                <form method="POST" action="/update_status/{{ ticket.id }}">
+                    <select name="status">
+                        <option value="Open" {% if ticket.status == "Open" %}selected{% endif %}>Open</option>
+                        <option value="In Progress" {% if ticket.status == "In Progress" %}selected{% endif %}>In Progress</option>
+                        <option value="Resolved" {% if ticket.status == "Resolved" %}selected{% endif %}>Resolved</option>
+                    </select>
+
+                    <button type="submit">Update</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <br>
+
+    <a href="/">Back to Home</a>
+
+</body>
+</html>

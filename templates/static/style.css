@@ -1,0 +1,63 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #142d4e;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Main welcome section */
+main {
+    text-align: center;
+    margin: 100px auto;
+    padding: 30px;
+    max-width: 700px;
+}
+
+main h2 {
+    color: #142d4e;
+    font-size: 32px;
+}
+
+main p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #2463a6;
+    color: white;
+    padding: 13px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #142d4e;
+}
+
